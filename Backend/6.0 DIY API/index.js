@@ -34,7 +34,7 @@ app.post("/jokes", (req, res) => {
     jokeText: req.body.text,
     jokeType: req.body.type,
   };
-  joke.push(newJoke);
+  jokes.push(newJoke);
   console.log(jokes.slice(-1));
   res.json(newJoke);
 });
