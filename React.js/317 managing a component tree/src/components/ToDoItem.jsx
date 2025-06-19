@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 function ToDoItem(props) {
   return (
@@ -7,7 +7,7 @@ function ToDoItem(props) {
         props.onChecked(props.id);
       }}
     >
-      <li>{props.text}</li>
+      <li style={{ textDecoration: "line-through"}}>{props.text}</li>
     </div>
   );
 }
